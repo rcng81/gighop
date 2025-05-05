@@ -1,0 +1,21 @@
+export const availableTags = [
+  "Education & Tutoring",
+  "Childcare & Babysitting",
+  "Pet Services",
+  "Home Cleaning",
+  "Yard & Outdoor Work",
+  "Moving & Hauling",
+  "Handyman & Repairs",
+  "Tech Support & IT Help",
+  "Design & Creative",
+  "Writing & Editing",
+  "Fitness & Wellness",
+  "Event Support & Staffing",
+  "Delivery & Errands",
+  "Photography & Media",
+  "Office & Admin Tasks",
+  "Art & Illustration",
+  "Food Prep & Bartending",
+  "Marketing & Social Media",
+  "Customer Support"
+];

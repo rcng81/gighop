@@ -1,0 +1,17 @@
+.exit-button {
+    position: absolute;
+    top: -30px;
+    left: -33px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    padding-right:0px;
+  }
+  
+  .exit-button:hover {
+    color: #000;
+  }
+  

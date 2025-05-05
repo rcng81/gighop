@@ -1,0 +1,94 @@
+/* Scroll arrows */
+.scroll-arrow {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  padding-bottom: 20px;
+}
+
+.scroll-arrow:hover {
+  background-color: #2563eb;
+}
+
+/* Community links */
+.community-link {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.community-link:hover {
+  background-color: #f0f4f8;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+/* Sidebar for large screens */
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+/* Main content with sidebar offset */
+.main-content {
+  margin-left: 240px;
+}
+
+/* Mobile & Tablet view (below 1024px) */
+@media (max-width: 1023px) {
+  /* Sidebar is hidden by default */
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  /* When sidebar is toggled open */
+  .show-sidebar {
+    max-height: 500px; /* Adjust if needed */
+    padding: 1rem;
+  }
+
+  /* Reset main content offset */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Menu icon toggle button */
+  .menu-toggle {
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    background: none;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+}
+
+/* Desktop view (≥1024px) — always show sidebar */
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+}
